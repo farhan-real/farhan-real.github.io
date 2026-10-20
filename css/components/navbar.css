@@ -22,7 +22,7 @@
   align-items: center;
 }
 
-.nav__logo {
+.nav-logo {
   font-size: 1.25rem;
   font-weight: 700;
   font-family: var(--font-mono);
@@ -30,8 +30,6 @@
   text-decoration: none;
   display: inline-flex;
   align-items: center;
-
-  /* 1. Disable code ligatures so '/' and '>' never merge or overlap */
   font-variant-ligatures: none;
   font-feature-settings: "liga" 0, "calt" 0;
 }
@@ -40,19 +38,18 @@
   color: var(--accent-primary);
 }
 
-/* 2. Controlled, natural spacing between 'n' and '/', plus separation between '/' and '>' */
 .logo-closing {
-  margin-left: 0.32rem;   /* Fixes the big gap between 'n' and '/' */
-  letter-spacing: 0.12em; /* Keeps '/' and '>' cleanly separated */
+  margin-left: 0.32rem;
+  letter-spacing: 0.12em;
 }
 
-.nav__list {
+.nav-list {
   display: flex;
   list-style: none;
   gap: 2rem;
 }
 
-.nav__link {
+.nav-link {
   text-decoration: none;
   color: var(--text-muted);
   font-size: 0.95rem;
@@ -61,19 +58,19 @@
   position: relative;
 }
 
-.nav__link:hover,
-.nav__link.active-link {
+.nav-link:hover,
+.nav-link.active-link {
   color: var(--accent-primary);
 }
 
-.nav__actions {
+.nav-actions {
   display: flex;
   align-items: center;
   gap: 1rem;
 }
 
 .theme-toggle,
-.nav__toggle {
+.nav-toggle {
   background: transparent;
   border: none;
   font-size: 1.15rem;
@@ -87,21 +84,20 @@
 }
 
 .theme-toggle:hover,
-.nav__toggle:hover {
+.nav-toggle:hover {
   color: var(--accent-primary);
 }
 
-.nav__toggle {
+.nav-toggle {
   display: none;
 }
 
-/* Responsive Navigation for Mobile devices */
 @media screen and (max-width: 768px) {
-  .nav__toggle {
+  .nav-toggle {
     display: block;
   }
 
-  .nav__menu {
+  .nav-menu {
     position: fixed;
     top: 70px;
     left: -100%;
@@ -113,16 +109,16 @@
     border-right: 1px solid var(--border-color);
   }
 
-  .nav__menu.show-menu {
+  .nav-menu.show-menu {
     left: 0;
   }
 
-  .nav__list {
+  .nav-list {
     flex-direction: column;
     gap: 1.5rem;
   }
 
-  .nav__link {
+  .nav-link {
     font-size: 1.15rem;
   }
 }

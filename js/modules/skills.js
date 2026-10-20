@@ -8,22 +8,20 @@ export function renderSkills() {
     .map(
       (cat) => `
       <div class="skill-category">
-        <!-- Category Header -->
-        <div class="skill-category__header">
-          <div class="skill-category__icon">
+        <div class="skill-category-header">
+          <div class="skill-category-icon">
             <i class="${cat.icon}"></i>
           </div>
-          <h3 class="skill-category__title">${cat.category}</h3>
+          <h3 class="skill-category-title">${cat.category}</h3>
         </div>
 
-        <!-- Horizontal Skills List -->
         <div class="skill-items">
           ${cat.items
             .map(
               (skill) => `
             <div class="skill-pill">
-              <i class="${skill.icon} skill-pill__icon"></i>
-              <span class="skill-pill__name">${skill.name}</span>
+              <i class="${skill.icon} skill-pill-icon"></i>
+              <span class="skill-pill-name">${skill.name}</span>
             </div>
           `
             )

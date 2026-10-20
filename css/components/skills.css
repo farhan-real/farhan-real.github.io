@@ -1,15 +1,9 @@
-/* ====================================================
-   SKILLS - SINGLE ROW PER CATEGORY & HORIZONTAL CHIPS
-   ==================================================== */
-
-/* 1 row per category */
-.skills__grid {
+.skills-grid {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
 }
 
-/* Category Row Container */
 .skill-category {
   background: var(--card-bg);
   border: 1px solid var(--card-border);
@@ -25,14 +19,13 @@
   border-color: var(--accent-primary);
 }
 
-/* Category Header (Icon + Title) */
-.skill-category__header {
+.skill-category-header {
   display: flex;
   align-items: center;
   gap: 0.75rem;
 }
 
-.skill-category__icon {
+.skill-category-icon {
   font-size: 1.05rem;
   color: var(--accent-primary);
   background: var(--bg-tertiary);
@@ -45,13 +38,12 @@
   border: 1px solid var(--border-color);
 }
 
-.skill-category__title {
+.skill-category-title {
   font-size: 1.1rem;
   font-weight: 600;
   color: var(--text-main);
 }
 
-/* Horizontal List of Skills */
 .skill-items {
   display: flex;
   flex-wrap: wrap;
@@ -59,7 +51,6 @@
   gap: 0.65rem;
 }
 
-/* Individual Skill Pill */
 .skill-pill {
   display: inline-flex;
   align-items: center;
@@ -76,14 +67,14 @@
   background: var(--bg-tertiary);
 }
 
-.skill-pill__icon {
+.skill-pill-icon {
   font-size: 1.25rem;
   display: inline-flex;
   align-items: center;
   justify-content: center;
 }
 
-.skill-pill__name {
+.skill-pill-name {
   font-size: 0.88rem;
   font-weight: 500;
   color: var(--text-main);

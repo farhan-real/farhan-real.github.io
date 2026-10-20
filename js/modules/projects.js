@@ -6,7 +6,6 @@ export function initProjects() {
 
   if (!filtersContainer || !projectsContainer) return;
 
-  // 1. Render Categories Filter Buttons dynamically
   filtersContainer.innerHTML = projectCategories
     .map(
       (cat, idx) => `
@@ -17,7 +16,6 @@ export function initProjects() {
     )
     .join('');
 
-  // 2. Render Project Cards (Handles optional 'site' link seamlessly)
   function renderProjects(categoryFilter = 'all') {
     projectsContainer.innerHTML = '';
 
@@ -30,30 +28,29 @@ export function initProjects() {
       const card = document.createElement('article');
       card.className = 'project-card';
 
-      // Conditional check: only generate Site button if 'site' URL is provided
       const siteButton = project.site
-        ? `<a href="${project.site}" target="_blank" rel="noopener noreferrer" class="project-btn project-btn--site">
+        ? `<a href="${project.site}" target="_blank" rel="noopener noreferrer" class="project-btn project-btn-site">
              <i class="fa-solid fa-arrow-up-right-from-square"></i> Site
            </a>`
         : '';
 
       const codeButton = project.code
-        ? `<a href="${project.code}" target="_blank" rel="noopener noreferrer" class="project-btn project-btn--code">
+        ? `<a href="${project.code}" target="_blank" rel="noopener noreferrer" class="project-btn project-btn-code">
              <i class="fa-brands fa-github"></i> Code
            </a>`
         : '';
 
       card.innerHTML = `
-        <div class="project-card__banner">
+        <div class="project-card-banner">
           <i class="${project.icon}"></i>
         </div>
-        <div class="project-card__body">
-          <h3 class="project-card__title">${project.name}</h3>
-          <p class="project-card__desc">${project.description}</p>
-          <div class="project-card__tags">
+        <div class="project-card-body">
+          <h3 class="project-card-title">${project.name}</h3>
+          <p class="project-card-desc">${project.description}</p>
+          <div class="project-card-tags">
             ${project.technologies.map((tech) => `<span>${tech}</span>`).join('')}
           </div>
-          <div class="project-card__actions">
+          <div class="project-card-actions">
             ${siteButton}
             ${codeButton}
           </div>
@@ -64,10 +61,8 @@ export function initProjects() {
     });
   }
 
-  // Initial Render (All)
   renderProjects('all');
 
-  // Filter Button Click Handlers
   const filterBtns = filtersContainer.querySelectorAll('.filter-btn');
   filterBtns.forEach((btn) => {
     btn.addEventListener('click', () => {

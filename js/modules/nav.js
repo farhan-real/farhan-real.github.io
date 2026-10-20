@@ -1,13 +1,9 @@
-/**
- * Navigation Module: Mobile Hamburger Menu & Active Link Highlighter on scroll
- */
 export function initNav() {
   const navToggle = document.getElementById('nav-toggle');
   const navMenu = document.getElementById('nav-menu');
-  const navLinks = document.querySelectorAll('.nav__link');
+  const navLinks = document.querySelectorAll('.nav-link');
   const sections = document.querySelectorAll('section[id]');
 
-  // Toggle Mobile Menu
   if (navToggle && navMenu) {
     navToggle.addEventListener('click', () => {
       navMenu.classList.toggle('show-menu');
@@ -20,7 +16,6 @@ export function initNav() {
     });
   }
 
-  // Close Mobile Menu on Link Click
   navLinks.forEach((link) => {
     link.addEventListener('click', () => {
       navMenu.classList.remove('show-menu');
@@ -30,7 +25,6 @@ export function initNav() {
     });
   });
 
-  // Highlight active link while scrolling
   window.addEventListener('scroll', () => {
     const scrollY = window.pageYOffset;
 
@@ -38,7 +32,7 @@ export function initNav() {
       const sectionHeight = section.offsetHeight;
       const sectionTop = section.offsetTop - 100;
       const sectionId = section.getAttribute('id');
-      const activeLink = document.querySelector(`.nav__link[href*="${sectionId}"]`);
+      const activeLink = document.querySelector(`.nav-link[href*="${sectionId}"]`);
 
       if (activeLink) {
         if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {

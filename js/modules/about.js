@@ -1,11 +1,9 @@
 import { aboutData } from '../data/about.js';
 
 export function renderAbout() {
-  // 1. Navigation & Brand Name
   const navBrand = document.getElementById('nav-brand-name');
   if (navBrand) navBrand.textContent = aboutData.name;
 
-  // 2. Hero Elements
   const heroBadge = document.getElementById('hero-badge');
   if (heroBadge) {
     heroBadge.innerHTML = `<span class="status-dot"></span> ${aboutData.statusBadge}`;
@@ -25,7 +23,6 @@ export function renderAbout() {
     heroGithubBtn.href = aboutData.links.github;
   }
 
-  // 3. Hero Social Icons
   const socialsContainer = document.getElementById('hero-socials');
   if (socialsContainer) {
     socialsContainer.innerHTML = '';
@@ -49,14 +46,13 @@ export function renderAbout() {
     }
   }
 
-  // 4. About Cards
   const cardsContainer = document.getElementById('about-cards-container');
   if (cardsContainer) {
     cardsContainer.innerHTML = aboutData.cards
       .map(
         (card) => `
-        <div class="about__card">
-          <i class="${card.icon} about__icon"></i>
+        <div class="about-card">
+          <i class="${card.icon} about-icon"></i>
           <h3>${card.title}</h3>
           <p>${card.description}</p>
         </div>
@@ -65,19 +61,18 @@ export function renderAbout() {
       .join('');
   }
 
-  // 5. Education Timeline
   const timelineContainer = document.getElementById('education-timeline');
   if (timelineContainer) {
     timelineContainer.innerHTML = aboutData.education
       .map(
         (item) => `
-        <div class="timeline__item">
-          <div class="timeline__dot"></div>
-          <div class="timeline__content">
-            <span class="timeline__date">${item.period}</span>
-            <h3 class="timeline__title">${item.degree}</h3>
-            <p class="timeline__institution">${item.institution}</p>
-            <p class="timeline__desc">${item.description}</p>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">${item.period}</span>
+            <h3 class="timeline-title">${item.degree}</h3>
+            <p class="timeline-institution">${item.institution}</p>
+            <p class="timeline-desc">${item.description}</p>
           </div>
         </div>
       `
@@ -85,7 +80,6 @@ export function renderAbout() {
       .join('');
   }
 
-  // 6. Contact Section Buttons
   const contactEmailBtn = document.getElementById('contact-email-btn');
   if (contactEmailBtn && aboutData.email) {
     contactEmailBtn.href = `mailto:${aboutData.email}`;
@@ -96,7 +90,6 @@ export function renderAbout() {
     contactGithubBtn.href = aboutData.links.github;
   }
 
-  // 7. Footer Name
   const footerName = document.getElementById('footer-name');
   if (footerName) footerName.textContent = aboutData.name;
 }
