@@ -28,10 +28,22 @@
   font-family: var(--font-mono);
   color: var(--text-main);
   text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+
+  /* 1. Disable code ligatures so '/' and '>' never merge or overlap */
+  font-variant-ligatures: none;
+  font-feature-settings: "liga" 0, "calt" 0;
 }
 
 .logo-accent {
   color: var(--accent-primary);
+}
+
+/* 2. Controlled, natural spacing between 'n' and '/', plus separation between '/' and '>' */
+.logo-closing {
+  margin-left: 0.32rem;   /* Fixes the big gap between 'n' and '/' */
+  letter-spacing: 0.12em; /* Keeps '/' and '>' cleanly separated */
 }
 
 .nav__list {
