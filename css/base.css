@@ -201,41 +201,6 @@ body {
   font-size: 0.95rem;
 }
 
-/* Skills Section */
-.skills__grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1.5rem;
-}
-
-.skill-category {
-  background: var(--card-bg);
-  border: 1px solid var(--card-border);
-  padding: 1.75rem;
-  border-radius: var(--radius-md);
-}
-
-.skill-category h4 {
-  margin-bottom: 1rem;
-  font-size: 1.1rem;
-}
-
-.skill-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.6rem;
-}
-
-.skill-tags span {
-  background-color: var(--bg-tertiary);
-  border: 1px solid var(--border-color);
-  color: var(--text-main);
-  padding: 0.35rem 0.75rem;
-  font-size: 0.85rem;
-  font-family: var(--font-mono);
-  border-radius: var(--radius-sm);
-}
-
 /* Timeline (Education) */
 .timeline {
   max-width: 700px;

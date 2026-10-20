@@ -1,0 +1,91 @@
+/* ====================================================
+   SKILLS - SINGLE ROW PER CATEGORY & HORIZONTAL CHIPS
+   ==================================================== */
+
+/* 1 row per category */
+.skills__grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Category Row Container */
+.skill-category {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius-md);
+  padding: 1.5rem 1.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  transition: border-color var(--transition-fast);
+}
+
+.skill-category:hover {
+  border-color: var(--accent-primary);
+}
+
+/* Category Header (Icon + Title) */
+.skill-category__header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.skill-category__icon {
+  font-size: 1.05rem;
+  color: var(--accent-primary);
+  background: var(--bg-tertiary);
+  width: 34px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-color);
+}
+
+.skill-category__title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-main);
+}
+
+/* Horizontal List of Skills */
+.skill-items {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+/* Individual Skill Pill */
+.skill-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  background: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  padding: 0.45rem 0.85rem;
+  transition: border-color var(--transition-fast), background-color var(--transition-fast);
+}
+
+.skill-pill:hover {
+  border-color: var(--accent-primary);
+  background: var(--bg-tertiary);
+}
+
+.skill-pill__icon {
+  font-size: 1.25rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.skill-pill__name {
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: var(--text-main);
+  white-space: nowrap;
+}
