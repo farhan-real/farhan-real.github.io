@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Farhan - Computer Science Student & Full Stack Web Developer Portfolio" />
+  <title>Farhan | Portfolio</title>
+
+  <!-- Google Fonts & Font Awesome Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/components/navbar.css" />
+  <link rel="stylesheet" href="css/components/projects.css" />
+</head>
+<body>
+
+  <!-- ================= NAVBAR ================= -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#hero" class="nav__logo" id="nav-brand-logo">
+        <span class="logo-accent">&lt;</span><span id="nav-brand-name">Farhan</span><span class="logo-accent"> /&gt;</span>
+      </a>
+
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+          <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+          <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+          <li class="nav__item"><a href="#education" class="nav__link">Education</a></li>
+          <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="nav__actions">
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <button class="nav__toggle" id="nav-toggle" aria-label="Toggle navigation menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ================= HERO ================= -->
+    <section class="hero section" id="hero">
+      <div class="hero__container container">
+        <div class="hero__badge" id="hero-badge"></div>
+        <h1 class="hero__title">
+          Hi, I'm <span class="text-gradient" id="hero-name">Farhan</span>.
+        </h1>
+        <h2 class="hero__subtitle" id="hero-subtitle"></h2>
+        <p class="hero__description" id="hero-desc"></p>
+
+        <div class="hero__cta">
+          <a href="#projects" class="btn btn--primary">View Projects <i class="fa-solid fa-arrow-right"></i></a>
+          <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn--outline" id="hero-github-btn">
+            <i class="fa-brands fa-github"></i> GitHub Profile
+          </a>
+        </div>
+
+        <div class="hero__socials" id="hero-socials"></div>
+      </div>
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+    <section class="about section" id="about">
+      <div class="container">
+        <h2 class="section__title">About Me</h2>
+        <p class="section__subtitle">A glimpse into my background and what drives me</p>
+
+        <div class="about__grid" id="about-cards-container">
+          <!-- Populated from js/data/about.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SKILLS ================= -->
+    <section class="skills section" id="skills">
+      <div class="container">
+        <h2 class="section__title">Skills & Tech Stack</h2>
+        <p class="section__subtitle">Technologies I work with</p>
+
+        <div class="skills__grid" id="skills-container">
+          <!-- Populated from js/data/skills.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PROJECTS ================= -->
+    <section class="projects section" id="projects">
+      <div class="container">
+        <h2 class="section__title">Featured Projects</h2>
+        <p class="section__subtitle">Real-world applications and web experiments hosted on GitHub</p>
+
+        <!-- Dynamic Category Filter Buttons -->
+        <div class="projects__filters" id="project-filters"></div>
+
+        <!-- Dynamic Projects Cards Grid -->
+        <div class="projects__grid" id="projects-container"></div>
+      </div>
+    </section>
+
+    <!-- ================= EDUCATION ================= -->
+    <section class="education section" id="education">
+      <div class="container">
+        <h2 class="section__title">Education</h2>
+        <p class="section__subtitle">My academic roadmap</p>
+
+        <div class="timeline" id="education-timeline">
+          <!-- Populated from js/data/about.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section class="contact section" id="contact">
+      <div class="container">
+        <div class="contact__box">
+          <h2 class="section__title">Let's Connect</h2>
+          <p class="contact__text">
+            Whether you want to discuss a project, collaborate on open-source, or just say hi, feel free to drop an email or reach out on GitHub.
+          </p>
+          <div class="contact__actions">
+            <a href="#" id="contact-email-btn" class="btn btn--primary">
+              <i class="fa-solid fa-paper-plane"></i> Send an Email
+            </a>
+            <a href="#" id="contact-github-btn" target="_blank" rel="noopener noreferrer" class="btn btn--outline">
+              <i class="fa-brands fa-github"></i> Follow on GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container footer__container">
+      <p>&copy; <span id="current-year"></span> <span id="footer-name">Farhan</span>. Hosted on GitHub Pages.</p>
+      <div class="footer__links">
+        <a href="#hero">Back to Top <i class="fa-solid fa-arrow-up"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Application Script -->
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
