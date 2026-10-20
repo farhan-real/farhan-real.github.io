@@ -61,6 +61,7 @@ export function renderAbout() {
       .join('');
   }
 
+  // Education Timeline
   const timelineContainer = document.getElementById('education-timeline');
   if (timelineContainer) {
     timelineContainer.innerHTML = aboutData.education
@@ -70,9 +71,9 @@ export function renderAbout() {
           <div class="timeline-dot"></div>
           <div class="timeline-content">
             <span class="timeline-date">${item.period}</span>
-            <h3 class="timeline-title">${item.degree}</h3>
-            <p class="timeline-institution">${item.institution}</p>
-            <p class="timeline-desc">${item.description}</p>
+            <h3 class="timeline-title">${item.institution}</h3>
+            <p class="timeline-institution">${item.degree}</p>
+            ${item.description ? `<p class="timeline-desc">${item.description}</p>` : ''}
           </div>
         </div>
       `
@@ -91,5 +92,7 @@ export function renderAbout() {
   }
 
   const footerName = document.getElementById('footer-name');
-  if (footerName) footerName.textContent = aboutData.name;
+  if (footerName) {
+    footerName.textContent = aboutData.copyright || aboutData.name;
+  }
 }

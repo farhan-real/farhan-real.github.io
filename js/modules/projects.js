@@ -6,6 +6,7 @@ export function initProjects() {
 
   if (!filtersContainer || !projectsContainer) return;
 
+  // 1. Render Categories Filter Buttons dynamically
   filtersContainer.innerHTML = projectCategories
     .map(
       (cat, idx) => `
@@ -16,13 +17,14 @@ export function initProjects() {
     )
     .join('');
 
+  // 2. Render Project Cards (Supports multiple categories in project.categories)
   function renderProjects(categoryFilter = 'all') {
     projectsContainer.innerHTML = '';
 
     const filtered =
       categoryFilter === 'all'
         ? projectsData
-        : projectsData.filter((item) => item.category === categoryFilter);
+        : projectsData.filter((item) => item.categories && item.categories.includes(categoryFilter));
 
     filtered.forEach((project) => {
       const card = document.createElement('article');
@@ -61,8 +63,10 @@ export function initProjects() {
     });
   }
 
+  // Initial load
   renderProjects('all');
 
+  // Filter Buttons Click Handling
   const filterBtns = filtersContainer.querySelectorAll('.filter-btn');
   filterBtns.forEach((btn) => {
     btn.addEventListener('click', () => {

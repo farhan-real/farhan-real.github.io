@@ -1,50 +1,59 @@
 /**
  * ABOUT & PROFILE DATA
- * Edit this file to update your personal information, bio, cards, and education.
  */
 export const aboutData = {
   name: "Farhan",
-  roleTitle: "Undergraduate Student & Web Developer",
+  copyright: "Shaik Farhan",
+  roleTitle: "Computer Science Student & Software Developer",
   statusBadge: "Available for Internships & Projects",
   description:
-    "I build scalable web applications, explore modern web stacks, and craft clean, accessible interfaces. Welcome to my personal playground on GitHub Pages.",
+    "I build high-performance applications, explore browser graphics and audio APIs, and build useful developer tools. Passionate about clean architecture, zero-dependency applications, and high performance.",
 
-  // Contact Information
-  email: "farhan@example.com",
+  email: "farhanworld777@gmail.com",
 
-  // Social & External Profiles
   links: {
     github: "https://github.com/farhan-real",
-    linkedin: "https://linkedin.com",
-    twitter: "" // Leave empty string if not used
+    linkedin: "https://linkedin.com/in/shaikfarhan7",
+    twitter: ""
   },
 
-  // About Cards
+  // Similar to the original layout with small tweaks reflecting your strengths
   cards: [
     {
       icon: "fa-solid fa-laptop-code",
       title: "Developer",
-      description: "I enjoy turning complex ideas into functional web apps. Experienced in building responsive interfaces and modern REST APIs."
+      description: "I build responsive web applications and standalone software tools, focusing on modular architecture, zero runtime bloat, and fast execution."
     },
     {
       icon: "fa-solid fa-graduation-cap",
       title: "Student",
-      description: "Currently pursuing a Bachelor's in Computer Science. Focused on algorithms, system design, and database management."
+      description: "Undergraduate Computer Science student with a strong foundation in data structures, algorithms, and systems design."
     },
     {
       icon: "fa-solid fa-lightbulb",
-      title: "Learner",
-      description: "Always experimenting with emerging web tools, open-source projects, and industry best practices."
+      title: "Builder",
+      description: "Curious and hands-on. Constantly experimenting with web APIs, custom parsers, reverse-engineering protocols, and mobile platforms."
     }
   ],
 
-  // Academic Roadmap / Education History
   education: [
     {
-      period: "2022 - Present",
-      degree: "Bachelor of Science in Computer Science",
-      institution: "Your University / College Name",
-      description: "Relevant Coursework: Data Structures & Algorithms, Database Systems, Web Engineering, Software Architecture, Object-Oriented Programming."
+      period: "2026 – 2030",
+      institution: "Vellore Institute of Technology (VIT), Chennai",
+      degree: "Bachelor of Technology – Computer Science and Engineering",
+      description: "Relevant Focus: Data Structures & Algorithms, Object-Oriented Programming, Discrete Mathematics, and Systems Engineering."
+    },
+    {
+      period: "Graduation Year: 2026",
+      institution: "Narayana Olympiad School, Chennai",
+      degree: "Higher Secondary Education – Class XII (CBSE Board)",
+      description: ""
+    },
+    {
+      period: "Graduation Year: 2024",
+      institution: "Narayana E–Techno School, Chennai",
+      degree: "Secondary School Education – Class X (CBSE Board)",
+      description: ""
     }
   ]
 };
