@@ -26,15 +26,6 @@ export const projectsData = [
     code: "https://github.com/farhan-real/nothing-eq-decoder"
   },
   {
-    name: "FreshRoute: Agri-Supply Chain Optimization",
-    categories: ["tools", "web"],
-    icon: "fa-solid fa-route",
-    description: "Constrained decision-support engine for perishable cold chains. Features a dual-solver architecture (SciPy HiGHS Linear Programming and an ultra-low-latency 0.25ms priority heuristic), biological Q10 thermal degradation decay, Monte Carlo stochastic risk modeling, and automated counterfactual auditing.",
-    technologies: ["Python", "SciPy (HiGHS LP)", "Pydantic v2", "Streamlit", "Stochastic Modeling"],
-    site: null, // CLI & Streamlit application
-    code: "https://github.com/farhan-real/freshroute"
-  },
-  {
     name: "Airspace Standoff",
     categories: ["web", "mobile", "simulations"],
     icon: "fa-solid fa-satellite-dish",
@@ -44,6 +35,15 @@ export const projectsData = [
     code: "https://github.com/farhan-real/airspace-standoff"
   },
   {
+    name: "Information Pathway",
+    categories: ["simulations", "tools"],
+    icon: "fa-solid fa-circle-nodes",
+    description: "An agent-based discrete-event network diffusion simulator and reverse cascade tomography engine. Uses calibrated Random Forest and Ridge regression models to simulate information propagation, narrative distortion, and Bayesian echo-chamber reinforcement across complex social graphs with a decoupled 20 TPS animation engine.",
+    technologies: ["Python", "NetworkX", "Scikit-Learn", "Cytoscape.js", "Discrete-Event Simulation"],
+    site: null, // Desktop application / PyWebView
+    code: "https://github.com/farhan-real/information-pathway"
+  },
+  {
     name: "Rail Signal Studio",
     categories: ["web", "tools"],
     icon: "fa-solid fa-diagram-project",
@@ -51,6 +51,24 @@ export const projectsData = [
     technologies: ["JavaScript", "HTML5 Canvas", "Custom Compiler / DSL", "State Machines", "CSS3"],
     site: "https://farhan-real.github.io/rail-signal-studio/",
     code: "https://github.com/farhan-real/rail-signal-studio"
+  },
+  {
+    name: "MDViewer",
+    categories: ["web", "tools"],
+    icon: "fa-solid fa-file-code",
+    description: "A zero-dependency, offline Markdown viewer engineered for technical documentation. Features built-in multi-language syntax highlighting, regex-based filename extraction from section headings, an interactive hierarchical table of contents, and a dedicated sequential code-copy menu with local persistence.",
+    technologies: ["JavaScript", "Regex Parsing", "Syntax Highlighting", "DOM Architecture"],
+    site: "https://farhan-real.github.io/MDViewer/",
+    code: "https://github.com/farhan-real/MDViewer"
+  },
+  {
+    name: "FreshRoute: Agri-Supply Chain Optimization",
+    categories: ["tools", "web"],
+    icon: "fa-solid fa-route",
+    description: "An automated decision-support and optimization engine for perishable produce distribution. Built with a dual-solver architecture (exact SciPy HiGHS Linear Programming alongside a sub-millisecond priority heuristic), integrating thermal shelf-life decay modeling, Monte Carlo risk analysis, and strict Pydantic data validation.",
+    technologies: ["Python", "SciPy (HiGHS LP)", "Pydantic v2", "Streamlit", "Stochastic Modeling"],
+    site: null, // CLI & Streamlit application
+    code: "https://github.com/farhan-real/freshroute"
   },
   {
     name: "Lumina",
@@ -69,5 +87,5 @@ export const projectsData = [
     technologies: ["Android / Kotlin", "JavaScript", "Web Audio API", "GPU Composition"],
     site: null, // Android project
     code: "https://github.com/farhan-real/2048-reimagined"
-  },
+  }
 ];
