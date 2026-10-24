@@ -7,7 +7,7 @@ export const aboutData = {
   roleTitle: "Computer Science Student & Software Developer",
   statusBadge: "Available for Internships & Projects",
   description:
-    "I build high-performance applications, explore browser graphics and audio APIs, and build useful developer tools. Passionate about clean architecture, zero-dependency applications, and high performance.",
+    "I create self-contained web applications and developer tools from the ground up. Instead of gluing together heavy external libraries, I write the core logic myself, whether that involves domain-specific parsers, linear programming optimization solvers, or real-time canvas rendering. I focus on speed, clean code, and building software that runs fast without runtime bloat.",
 
   email: "farhanworld777@gmail.com",
 
