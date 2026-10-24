@@ -6,7 +6,7 @@ export function initProjects() {
 
   if (!filtersContainer || !projectsContainer) return;
 
-  // 1. Render Categories Filter Buttons dynamically
+  // 1. Render Categories Filter Buttons
   filtersContainer.innerHTML = projectCategories
     .map(
       (cat, idx) => `
@@ -17,7 +17,7 @@ export function initProjects() {
     )
     .join('');
 
-  // 2. Render Project Cards (Supports multiple categories in project.categories)
+  // 2. Render Split Projects
   function renderProjects(categoryFilter = 'all') {
     projectsContainer.innerHTML = '';
 
@@ -43,19 +43,24 @@ export function initProjects() {
         : '';
 
       card.innerHTML = `
-        <div class="project-card-banner">
-          <i class="${project.icon}"></i>
-        </div>
-        <div class="project-card-body">
-          <h3 class="project-card-title">${project.name}</h3>
+        <div class="project-card-main">
+          <div class="project-card-title-group">
+            <div class="project-card-icon">
+              <i class="${project.icon}"></i>
+            </div>
+            <h3 class="project-card-title">${project.name}</h3>
+          </div>
+
           <p class="project-card-desc">${project.description}</p>
+
           <div class="project-card-tags">
             ${project.technologies.map((tech) => `<span>${tech}</span>`).join('')}
           </div>
-          <div class="project-card-actions">
-            ${siteButton}
-            ${codeButton}
-          </div>
+        </div>
+
+        <div class="project-card-actions">
+          ${siteButton}
+          ${codeButton}
         </div>
       `;
 
@@ -63,10 +68,8 @@ export function initProjects() {
     });
   }
 
-  // Initial load
   renderProjects('all');
 
-  // Filter Buttons Click Handling
   const filterBtns = filtersContainer.querySelectorAll('.filter-btn');
   filterBtns.forEach((btn) => {
     btn.addEventListener('click', () => {
