@@ -17,22 +17,13 @@ export const projectCategories = [
 
 export const projectsData = [
   {
-    name: "Nothing X Advanced EQ Encoder/Decoder",
-    categories: ["tools"],
-    icon: "fa-solid fa-sliders",
-    description: "A cross-platform Python tool to reverse-engineer, parse, and generate Nothing X 8-band parametric EQ profiles. Decodes Gzip-compressed binary QR payloads from screenshots, validates parameters against hardware limits, and programmatically exports custom dot-matrix QR cards.",
-    technologies: ["Python", "Binary Parsing (Gzip)", "Computer Vision (ZBar)", "Hardware Validation"],
-    site: null, // Python CLI
-    code: "https://github.com/farhan-real/nothing-eq-decoder"
-  },
-  {
-    name: "Airspace Standoff",
-    categories: ["web", "mobile", "simulations"],
-    icon: "fa-solid fa-satellite-dish",
-    description: "A real-time C4ISR tactical radar terminal and air wing command simulator built from scratch in vanilla JavaScript. Features dynamic microwave radar physics based on the radar range equation, aspect-dependent RCS calculations, kinematic pursuit guidance, and multi-agent AI scheduling with zero runtime dependencies.",
-    technologies: ["JavaScript (ES6+)", "HTML5 Canvas", "Discrete Integration", "Web Audio API"],
-    site: "https://farhan-real.github.io/airspace-standoff/",
-    code: "https://github.com/farhan-real/airspace-standoff"
+    name: "XM-Studio",
+    categories: ["web", "tools", "mobile"],
+    icon: "fa-solid fa-compact-disc",
+    description: "A client-side digital signal processing workstation and tracker module player powered by WebAssembly (libopenmpt). Built with a multithreaded architecture that offloads audio synthesis to a background Web Worker feeding an AudioWorklet via zero-copy transferable memory, paired with a 32-node virtualized DOM for catalog navigation.",
+    technologies: ["JavaScript", "WebAssembly (WASM)", "AudioWorklet", "Web Workers", "IndexedDB"],
+    site: "https://farhan-real.github.io/XM-Studio/",
+    code: "https://github.com/farhan-real/XM-Studio"
   },
   {
     name: "Information Pathway",
@@ -44,6 +35,15 @@ export const projectsData = [
     code: "https://github.com/farhan-real/information-pathway"
   },
   {
+    name: "Nothing X Advanced EQ Encoder/Decoder",
+    categories: ["tools"],
+    icon: "fa-solid fa-sliders",
+    description: "A cross-platform Python tool to reverse-engineer, parse, and generate Nothing X 8-band parametric EQ profiles. Decodes Gzip-compressed binary QR payloads from screenshots, validates parameters against hardware limits, and programmatically exports custom dot-matrix QR cards.",
+    technologies: ["Python", "Binary Parsing (Gzip)", "Computer Vision (ZBar)", "Hardware Validation"],
+    site: null, // Python CLI
+    code: "https://github.com/farhan-real/nothing-eq-decoder"
+  },
+  {
     name: "Rail Signal Studio",
     categories: ["web", "tools"],
     icon: "fa-solid fa-diagram-project",
@@ -51,6 +51,15 @@ export const projectsData = [
     technologies: ["JavaScript", "HTML5 Canvas", "Custom Compiler / DSL", "State Machines", "CSS3"],
     site: "https://farhan-real.github.io/rail-signal-studio/",
     code: "https://github.com/farhan-real/rail-signal-studio"
+  },
+  {
+    name: "FreshRoute: Agri-Supply Chain Optimization",
+    categories: ["tools", "web"],
+    icon: "fa-solid fa-route",
+    description: "An automated decision-support and optimization engine for perishable produce distribution. Built with a dual-solver architecture (exact SciPy HiGHS Linear Programming alongside a sub-millisecond priority heuristic), integrating thermal shelf-life decay modeling, Monte Carlo risk analysis, and strict Pydantic data validation.",
+    technologies: ["Python", "SciPy (HiGHS LP)", "Pydantic v2", "Streamlit", "Stochastic Modeling"],
+    site: null, // CLI & Streamlit application
+    code: "https://github.com/farhan-real/freshroute"
   },
   {
     name: "MDViewer",
@@ -62,13 +71,13 @@ export const projectsData = [
     code: "https://github.com/farhan-real/MDViewer"
   },
   {
-    name: "FreshRoute: Agri-Supply Chain Optimization",
-    categories: ["tools", "web"],
-    icon: "fa-solid fa-route",
-    description: "An automated decision-support and optimization engine for perishable produce distribution. Built with a dual-solver architecture (exact SciPy HiGHS Linear Programming alongside a sub-millisecond priority heuristic), integrating thermal shelf-life decay modeling, Monte Carlo risk analysis, and strict Pydantic data validation.",
-    technologies: ["Python", "SciPy (HiGHS LP)", "Pydantic v2", "Streamlit", "Stochastic Modeling"],
-    site: null, // CLI & Streamlit application
-    code: "https://github.com/farhan-real/freshroute"
+    name: "Airspace Standoff",
+    categories: ["web", "mobile", "simulations"],
+    icon: "fa-solid fa-satellite-dish",
+    description: "A real-time C4ISR tactical radar terminal and air wing command simulator built from scratch in vanilla JavaScript. Features dynamic microwave radar physics based on the radar range equation, aspect-dependent RCS calculations, kinematic pursuit guidance, and multi-agent AI scheduling with zero runtime dependencies.",
+    technologies: ["JavaScript (ES6+)", "HTML5 Canvas", "Discrete Integration", "Web Audio API"],
+    site: "https://farhan-real.github.io/airspace-standoff/",
+    code: "https://github.com/farhan-real/airspace-standoff"
   },
   {
     name: "Lumina",
