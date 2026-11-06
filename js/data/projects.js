@@ -63,6 +63,15 @@ export const projectsData = [
     code: "https://github.com/farhan-real/freshroute"
   },
   {
+    name: "2048 Reimagined",
+    categories: ["web", "mobile", "pwa"],
+    icon: "fa-solid fa-gamepad",
+    description: "A cross-platform PWA and auto-updating Android client engineered for 120Hz/144Hz displays. Features a modular dynamic theming engine 20+ Themes with live Dark/Light toggles, an 25-track chiptune soundtrack with a real-time reactive canvas frequency visualizer, an offline-first Service Worker cache that auto-updates directly from the web without APK reinstalls,  a native Kotlin haptic bridge, and deterministic PRNG state hashing.",
+    technologies: [ "PWA / Service Worker", "Android / Kotlin", "JavaScript (ES6+)", "HTML5 Canvas 2D", "Web Audio API", "GPU Composition"],
+    site: "https://farhan-real.github.io/2048Reimagined-Web/",
+    code: "https://github.com/farhan-real/2048-reimagined"
+  },
+  {
     name: "MDViewer",
     categories: ["web", "tools"],
     icon: "fa-solid fa-file-code",
@@ -88,14 +97,5 @@ export const projectsData = [
     technologies: ["JavaScript", "HTML5 Canvas 2D", "Mathematical Modeling", "Performance Optimization"],
     site: "https://farhan-real.github.io/lumina/",
     code: "https://github.com/farhan-real/lumina"
-  },
-  {
-    name: "2048 Reimagined",
-    categories: ["web", "mobile", "pwa"],
-    icon: "fa-solid fa-gamepad",
-    description: "A cross-platform PWA and auto-updating Android client engineered for 120Hz/144Hz displays. Features a modular dynamic theming engine 20+ Themes with live Dark/Light toggles, an 25-track chiptune soundtrack with a real-time reactive canvas frequency visualizer, an offline-first Service Worker cache that auto-updates directly from the web without APK reinstalls,  a native Kotlin haptic bridge, and deterministic PRNG state hashing.",
-    technologies: [ "PWA / Service Worker", "Android / Kotlin", "JavaScript (ES6+)", "HTML5 Canvas 2D", "Web Audio API", "GPU Composition"],
-    site: "https://farhan-real.github.io/2048Reimagined-Web/",
-    code: "https://github.com/farhan-real/2048-reimagined"
   }
 ];
