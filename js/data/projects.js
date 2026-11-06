@@ -21,7 +21,7 @@ export const projectsData = [
     categories: ["web", "tools", "mobile"],
     icon: "fa-solid fa-compact-disc",
     description: "A client-side digital signal processing workstation and tracker module player powered by WebAssembly (libopenmpt). Built with a multithreaded architecture that offloads audio synthesis to a background Web Worker feeding an AudioWorklet via zero-copy transferable memory, paired with a 32-node virtualized DOM for catalog navigation.",
-    technologies: ["JavaScript", "WebAssembly (WASM)", "AudioWorklet", "Web Workers", "IndexedDB"],
+    technologies: ["JavaScript", "WebAssembly (WASM)", "AudioWorklet", "Web Workers", "IndexedDB", "Performance Optimization"],
     site: "https://farhan-real.github.io/XM-Studio/",
     code: "https://github.com/farhan-real/XM-Studio"
   },
@@ -93,8 +93,8 @@ export const projectsData = [
     categories: ["mobile", "web"],
     icon: "fa-solid fa-mobile-screen-button",
     description: "A high-performance Android client engineered for 120Hz/144Hz high refresh rate displays. Uses GPU-accelerated matrix transforms for zero-lag rendering, a native Kotlin haptic bridge, a real-time Web Audio spectrum visualizer, and deterministic PRNG state hashing.",
-    technologies: ["Android / Kotlin", "JavaScript", "Web Audio API", "GPU Composition"],
-    site: null, // Android project
+    technologies: ["Android / Kotlin", "JavaScript", "HTML5 Canvas 2D", "Web Audio API", "GPU Composition"],
+    site: "https://farhan-real.github.io/2048Reimagined-Web/",
     code: "https://github.com/farhan-real/2048-reimagined"
   }
 ];
