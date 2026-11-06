@@ -90,10 +90,10 @@ export const projectsData = [
   },
   {
     name: "2048 Reimagined",
-    categories: ["mobile", "web"],
-    icon: "fa-solid fa-mobile-screen-button",
-    description: "A high-performance Android client engineered for 120Hz/144Hz high refresh rate displays. Uses GPU-accelerated matrix transforms for zero-lag rendering, a native Kotlin haptic bridge, a real-time Web Audio spectrum visualizer, and deterministic PRNG state hashing.",
-    technologies: ["Android / Kotlin", "JavaScript", "HTML5 Canvas 2D", "Web Audio API", "GPU Composition"],
+    categories: ["web", "mobile", "pwa"],
+    icon: "fa-solid fa-gamepad",
+    description: "A cross-platform PWA and auto-updating Android client engineered for 120Hz/144Hz displays. Features an offline-first Service Worker cache that loads and updates game assets directly from the web without requiring APK reinstalls, desktop keyboard and mouse controls, widescreen dual-edge canvas visualizers, a native Kotlin haptic bridge, and deterministic PRNG state hashing.",
+    technologies: [ "PWA / Service Worker", "Android / Kotlin", "JavaScript (ES6+)", "HTML5 Canvas 2D", "Web Audio API", "GPU Composition"],
     site: "https://farhan-real.github.io/2048Reimagined-Web/",
     code: "https://github.com/farhan-real/2048-reimagined"
   }
